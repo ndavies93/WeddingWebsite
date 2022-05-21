@@ -1,0 +1,61 @@
+  body{
+    background-color: #F9F9F9;
+  }
+  body p {
+    text-align: center;
+  }
+  hr {
+    background-color: #FFE69A;
+    border-style: none;
+    width: 40%;
+    height: 2px;
+  }
+h1 {
+  color: #92B4EC;
+  text-align: right;
+  margin-right: 3rem;
+  /* font-family: 'Parisienne', cursive; */
+}
+h2 {
+  color: #92B4EC;
+  text-align: center;
+}
+h3{
+  color: #FFD24C;
+  text-align: right;
+  margin-right: 3rem;
+}
+.RSVPButton {
+  position: sticky;
+  margin-right: 5rem;
+  background-color: #92B4EC;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+}
+/* .hotelImg{
+  max-height: 200px;
+  margin-right: 2em;
+  margin-left: 2em;
+  display: grid;
+  height: 20%;
+  width: inherit;
+  border-radius: 5%;
+} */
+.imgDiv {
+  width: 400px;
+}
+.imgDiv img {
+  max-height: 200px;
+  margin-right: 2em;
+  margin-left: 2em;
+  display: grid;
+  height: 20%;
+  width: inherit;
+  border-radius: 5%;
+}
