@@ -11,16 +11,18 @@ body{
     max-width: 80%;
     margin-left: 10%;
     font-family: 'Varela', sans-serif;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: 2.2em;
     color: #7F8487;
   }
 
 hr {
-    background-color: #7F8487;
+    background-color: #FFE69A;
     border-style: none;
     width: 40%;
     height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 .introText{
@@ -42,24 +44,56 @@ h2 {
 
 h3 {
 font-family: 'Varela', sans-serif;
-font-size: large;
+font-size: 20px;
 }
 
 h4 {
 font-family: 'Varela', sans-serif;
-font-size: 1.6em;
+font-size: 1.4em;
+color: #92B4EC;
 }
 
 .RSVPButton {
-  background-color: #92B4EC;
-  border: none;
-  color: white;
-  padding: 10px 20px;
+  background-color: white;
+  border-color: #92B4EC;
+  border: solid 3px;
+  color: #92B4EC;
+  padding: 15px 20px;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.RSVPButton:hover {
+  background-color: #92B4EC;
+  border-color: #92B4EC;
+  border: solid 3px;
+  color: white;
+  padding: 15px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+em {
+  color: #FFD24C;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.imgDiv {
+  font-family: 'Varela', sans-serif;
+  font-size: 1.4em;
+  color: #92B4EC;
 }
 
 .hotelImg {
@@ -72,6 +106,7 @@ font-size: 1.6em;
   max-height: 500px;
   width: inherit;
   border-radius: 5%;
+  padding: 20px;
 }
 
 .topBar {
@@ -86,7 +121,19 @@ font-size: 1.6em;
   flex-direction: column;
 }
 
-.footer p {
-  font-size: 8px;
-  background-color: #7F8487;
+footer {
+  font-size: small;
+  color: #7F8487;
+}
+
+a {
+  padding: 5px;
+}
+
+a:link {
+  color: #92B4EC;
+}
+
+a:visited {
+  color: #FFD24C;
 }
