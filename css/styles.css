@@ -75,7 +75,7 @@ font-size: 1.6em;
 }
 
 .topBar {
-  background-image: url("../../WhynotGetMarried/images/coverPhoto.jpg");
+  background-image: src="../../WhynotGetMarried/images/coverPhoto.jpg";
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
