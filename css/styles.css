@@ -1,33 +1,56 @@
-  body{
+body{
     background-color: #F9F9F9;
-  }
-  body p {
     text-align: center;
   }
-  hr {
-    background-color: #FFE69A;
+
+  body p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: 10%;
+    font-family: 'Varela', sans-serif;
+    font-size: 1.6em;
+    line-height: 2.2em;
+    color: #7F8487;
+  }
+
+hr {
+    background-color: #7F8487;
     border-style: none;
     width: 40%;
     height: 2px;
   }
+
+.introText{
+    color: #FFD24C;
+    margin: 40% 2% 8% 45%;
+  }
+
 h1 {
-  color: #92B4EC;
-  text-align: right;
-  margin-right: 3rem;
-  /* font-family: 'Parisienne', cursive; */
-}
+    font-size: 80px;
+    font-family: 'Parisienne', cursive;
+  }
+
 h2 {
   color: #92B4EC;
-  text-align: center;
+  padding: 10px;
+  font-size: 50px;
+  font-family: 'Parisienne', cursive;
 }
-h3{
-  color: #FFD24C;
-  text-align: right;
-  margin-right: 3rem;
+
+h3 {
+font-family: 'Varela', sans-serif;
+font-size: large;
 }
+
+h4 {
+font-family: 'Varela', sans-serif;
+font-size: 1.6em;
+}
+
 .RSVPButton {
-  position: sticky;
-  margin-right: 5rem;
   background-color: #92B4EC;
   border: none;
   color: white;
@@ -36,26 +59,34 @@ h3{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 10px;
 }
-/* .hotelImg{
+
+.hotelImg {
   max-height: 200px;
-  margin-right: 2em;
-  margin-left: 2em;
-  display: grid;
-  height: 20%;
   width: inherit;
   border-radius: 5%;
-} */
-.imgDiv {
-  width: 400px;
 }
-.imgDiv img {
-  max-height: 200px;
-  margin-right: 2em;
-  margin-left: 2em;
-  display: grid;
-  height: 20%;
+
+.happyCouple {
+  max-height: 500px;
   width: inherit;
   border-radius: 5%;
+}
+
+.topBar {
+  background-image: url("/Users/nicole/Web Development/WhynotGetMarried/images/coverPhoto.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 50rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {
+  font-size: 8px;
+  background-color: #7F8487;
 }
