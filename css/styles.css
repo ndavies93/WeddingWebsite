@@ -28,11 +28,12 @@ hr {
   }
 
 .introText{
-    color: #FFD24C;
-    margin-top: 40%;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    text-align: right;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: #FFD24C;
+  text-align: right;
+  z-index: 5;
   }
 
 h1 {
@@ -126,15 +127,18 @@ em {
 }
 
 .topBar {
-  background-image: src="../../WhynotGetMarried/images/coverPhoto.jpg";
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
   min-height: 50rem;
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.topBar img{
+  z-index: -5;
+  position: relative;
+  width: 100%;
+  min-height: 50rem;
 }
 
 footer {
