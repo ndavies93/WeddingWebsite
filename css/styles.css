@@ -27,6 +27,13 @@ hr {
     margin-bottom: 30px;
   }
 
+.fancyText {
+  font-family: 'Varela', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: #7F8487;
+}
+
 .introText{
   position: absolute;
   bottom: 2rem;
