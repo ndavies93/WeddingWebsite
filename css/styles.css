@@ -29,8 +29,8 @@ hr {
 
 .introText{
   position: absolute;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 6rem;
+  right: 6rem;
   color: #FFD24C;
   text-align: right;
   z-index: 5;
@@ -45,10 +45,12 @@ h1 {
 
 h2 {
   color: #92B4EC;
-  padding: 10px;
-  font-size: 50px;
+  padding-top: 10px;
+  margin-bottom: 0;
+  font-size: 60px;
   font-weight: 200;
   font-family: 'Parisienne', cursive;
+  /* text-decoration: underline 2px; */
 }
 
 h3 {
@@ -60,7 +62,7 @@ margin: 5px;
 
 h4 {
 font-family: 'Varela', sans-serif;
-font-size: 1.4em;
+font-size: 1.8em;
 font-weight: 200;
 color: #92B4EC;
 }
@@ -111,12 +113,16 @@ em {
   font-weight: 200;
   font-size: 1.4em;
   color: #92B4EC;
+  height: 300px;
+  width: 300px;
+  margin: 50px;
 }
 
 .hotelImg {
-  max-height: 200px;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   border-radius: 5%;
+  object-fit: cover;
 }
 
 .happyCouple {
@@ -156,4 +162,13 @@ a:link {
 
 a:visited {
   color: #FFD24C;
+}
+
+table {
+  width: 60%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
