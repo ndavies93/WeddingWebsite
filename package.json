@@ -1,0 +1,19 @@
+{
+  "name": "whynotgetmarried",
+  "version": "1.0.0",
+  "description": "Wedding website for Elijah and Nicole, designed and created by Nicole, and Elijah.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndavies93/WhynotGetMarried.git"
+  },
+  "author": "Nicole Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndavies93/WhynotGetMarried/issues"
+  },
+  "homepage": "https://github.com/ndavies93/WhynotGetMarried#readme"
+}

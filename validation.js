@@ -8,14 +8,10 @@
     // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
-            console.log(form.valueOf())
             if (!form.checkValidity()) {
                 event.preventDefault()
                 event.stopPropagation()
             }
-            console.log('Form was submitted');
-            console.log(event);
-
             form.classList.add('was-validated')
         }, false)
     })
