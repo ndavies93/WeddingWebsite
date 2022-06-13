@@ -1,6 +1,6 @@
 body{
     background-color: #FFFFFF;
-    text-align: center;
+    text-align: center !important;
     margin: 0;
   }
 
@@ -22,10 +22,19 @@ hr {
     background-color: #FFE69A;
     border-style: none;
     width: 40%;
-    height: 3px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 2px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  margin-left: auto !important;
+  margin-right: auto; !important;
   }
+
+.fancyText {
+  font-family: 'Varela', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: #7F8487;
+}
 
 .introText{
   position: absolute;
