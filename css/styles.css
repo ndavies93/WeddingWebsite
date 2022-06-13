@@ -1,6 +1,6 @@
 body{
     background-color: #FFFFFF;
-    text-align: center;
+    text-align: center !important;
     margin: 0;
   }
 
@@ -23,8 +23,10 @@ hr {
     border-style: none;
     width: 40%;
     height: 2px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  margin-left: auto !important;
+  margin-right: auto; !important;
   }
 
 .fancyText {
