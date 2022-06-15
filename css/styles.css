@@ -13,7 +13,7 @@ body{
     margin-left: 10%;
     font-family: 'Varela', sans-serif;
     font-size: 1.4em;
-    line-height: 2.2em;
+    line-height: 2.4em;
     font-weight: 200;
     color: #7F8487;
   }
@@ -22,11 +22,11 @@ hr {
     background-color: #FFE69A;
     border-style: none;
     width: 40%;
-    height: 2px;
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
-  margin-left: auto !important;
-  margin-right: auto; !important;
+    height: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 .fancyText {
@@ -54,7 +54,7 @@ h1 {
 
 h2 {
   color: #92B4EC;
-  padding-top: 20px;
+  padding: 20px;
   margin-bottom: 0;
   font-size: 60px;
   font-weight: 200;
@@ -73,6 +73,7 @@ font-family: 'Varela', sans-serif;
 font-size: 1.8em;
 font-weight: 200;
 color: #92B4EC;
+padding: 5px;
 }
 
 .RSVPButton {
