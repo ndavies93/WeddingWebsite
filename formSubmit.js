@@ -10,15 +10,21 @@
         const formValues = Object.entries(event.target).map((pair) =>{
             const {type, name, value, checked} = pair[1];
             const formName = type === 'radio' ? value : name;
-            console.log(formName);
             const formValue = type === 'radio' ? checked : value;
             return {[formName]: formValue}
         })
         xmlhttp.onreadystatechange = function() { // Call a function when the state changes.
             if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
                 console.log(this.responseText);
+            } else {
+                console.log('error',this.status, this.statusText)
             }
         }
-        xmlhttp.send(JSON.stringify(formValues));
+        try{
+            xmlhttp.send(JSON.stringify(formValues));
+        }
+        catch (e) {
+            console.log(e)
+        }
     }
 })()
