@@ -11,6 +11,8 @@
             if (!form.checkValidity()) {
                 event.preventDefault()
                 event.stopPropagation()
+            } else{
+                document.getElementById('closeButton').click();
             }
             form.classList.add('was-validated')
         }, false)
