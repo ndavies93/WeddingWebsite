@@ -14,7 +14,9 @@
             return {[formName]: formValue}
         })
         xmlhttp.onreadystatechange = function() { // Call a function when the state changes.
+            console.log(formValues)
             if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+
             } else {
                 console.log('error',this.status, this.statusText)
             }
