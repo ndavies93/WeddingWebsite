@@ -1,8 +1,7 @@
 (() => {
     'use strict'
     const xmlhttp = new XMLHttpRequest();
-    // const theUrl = "https://whynot-get-married-backend.herokuapp.com/form";
-    const theUrl = "http://localhost:8081/form";
+    const theUrl = "https://whynot-get-married-backend.herokuapp.com/form";
     xmlhttp.open("POST", theUrl, true);
     xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
