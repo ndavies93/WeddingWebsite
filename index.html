@@ -193,7 +193,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel">RSVP</h2>
+                    <h2 class="modal-title center" id="exampleModalLabel">RSVP</h2>
                 </div>
                 <div class="modal-body">
                     <form class="row g-3 needs-validation" id="rsvp-form" novalidate>
@@ -224,60 +224,81 @@
                                 Please provide your email.
                             </div>
                         </div>
-                        <div class="col-md-6 input-group">
-                            <label for="plusOne" class="fancyText form-label">Plus One</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="plusOne" name="Plus One"  aria-describedby="inputGroupPrepend2" placeholder="provide plus one's name if applicable">
-                            </div>
-                        </div>
                         <div class="col-md-12 input-group">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input " type="radio" value="Vegetarian" name="inlineRadioOptionsFood" id="vg" >
-                                <label class="form-check-label" for="vg">Vegetarian</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input " type="radio" value="Gluten Free" name="inlineRadioOptionsFood" id="gf" >
-                                <label class="form-check-label" for="gf">Gluten Free</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input " type="radio" value="Dairy Free" name="inlineRadioOptionsFood" id="df" >
-                                <label class="form-check-label" for="df">Dairy Free</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input " type="radio" value="Other" name="inlineRadioOptionsFood" id="other"  >
-                                <label class="form-check-label" for="other">Other</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input " type="radio" value="No Food Restrictions" name="inlineRadioOptionsFood" id="none"   checked>
-                                <label class="form-check-label" for="none">None</label>
-                            </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" data-bs-toggle="collapse" data-bs-target="#collapseExample" type="checkbox" id="flexSwitchCheckDefault" role="switch" value="Is Attending" id="isAtt" name="isAtt">
+                            <label class="form-check-label" for="isAtt">
+                                Check this box if you will be joining us on our big day! (If you will be toasting from afar leave box unchecked!)
+                            </label>
                         </div>
-                        <div class="col-md-6 input-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="validationDietRestrict" name="Specific Diet Restrictions"  aria-describedby="inputGroupPrepend2" placeholder="Provide dietary restrictions if 'Other' is selected.">
-                            </div>
                         </div>
-                        <div class="col-md-12 input-group">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="Otentik" id="ot">
-                                <label class="form-check-label" for="ot">Otentik</label>
+                        <div class="collapse col-md-12 row-md-12" id="collapseExample" data-bs-target="#collapseExample" aria-controls="collapseExample">
+                            <hr>
+                            <h4 class="fancyText">Plus One</h4>
+                            <hr>
+                            <div class="col-md-12 input-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="plusOne" name="Plus One"  aria-describedby="inputGroupPrepend2" placeholder="Please provide your Plus One's name if you are bringing one.">
+                                    </div>
+                                </div>
+                                <hr>
+                                <h6 class="fancyText">Dietary Restrictions</h6>
+                                <hr>
+                            <div class="col-md-12 input-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" value="Vegetarian" name="inlineRadioOptionsFood" id="vg" >
+                                        <label class="form-check-label" for="vg">Vegetarian</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" value="Gluten Free" name="inlineRadioOptionsFood" id="gf" >
+                                        <label class="form-check-label" for="gf">Gluten Free</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" value="Dairy Free" name="inlineRadioOptionsFood" id="df" >
+                                        <label class="form-check-label" for="df">Dairy Free</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" value="Other" name="inlineRadioOptionsFood" id="other"  >
+                                        <label class="form-check-label" for="other">Other</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="radio" value="No Food Restrictions" name="inlineRadioOptionsFood" id="none"   checked>
+                                        <label class="form-check-label" for="none">None</label>
+                                    </div>
+                                </div>
+                            <br>
+                            <div class="col-md-6 input-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="validationDietRestrict" name="Specific Diet Restrictions"  aria-describedby="inputGroupPrepend2" placeholder="Provide dietary restrictions if 'Other' is selected.">
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="Rustic Cabin" id="rc" >
-                                <label class="form-check-label" for="rc">Rustic Cabin</label>
+                                <hr>
+                                <h4 class="fancyText">Accommodations</h4>
+                                <hr>
+                                <div class="col-md-12 input-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="Otentik" id="ot">
+                                        <label class="form-check-label" for="ot">Otentik</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="Rustic Cabin" id="rc" >
+                                        <label class="form-check-label" for="rc">Rustic Cabin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="Oasis Pod" id="op" >
+                                        <label class="form-check-label" for="op">Oasis Pod</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="No Accommodations" id="na" checked>
+                                        <label class="form-check-label" for="na">None</label>
+                                    </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="Oasis Pod" id="op" >
-                                <label class="form-check-label" for="op">Oasis Pod</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" value="No Accommodations" id="na" checked>
-                                <label class="form-check-label" for="na">None</label>
-                            </div>
+
                         </div>
+
                         <div class="modal-footer">
                             <button type="button" class="RSVPButton" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="RSVPButton">Submit RSVP</button>
+                            <button type="submit" class="RSVPButton" data-bs-dismiss="modal">Submit RSVP</button>
                         </div>
                     </form>
                 </div>
