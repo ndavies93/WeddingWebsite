@@ -14,11 +14,11 @@
             return {[formName]: formValue}
         })
         xmlhttp.onreadystatechange = function() { // Call a function when the state changes.
-            console.log(formValues)
-            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-
+            if (this.status === 200) {
+                document.getElementById("success-alert").classList.remove('d-none');
             } else {
-                console.log('error',this.status, this.statusText)
+                console.log('error',this.status, this.statusText);
+                document.getElementById("error-alert").classList.remove('d-none');
             }
         }
         try{
