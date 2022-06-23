@@ -14,7 +14,14 @@
 </head>
 
 <body>
-
+<div class="alert alert-success alert-dismissible fade show sticky-top d-none" role="alert" id="success-alert">
+    <strong>Success!</strong> Your RSVP was submitted successfully!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-danger alert-dismissible fade show sticky-top d-none" role="alert" id="error-alert">
+    <strong>On no!</strong> Something went wrong with your RSVP submission, please try again!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 <div class="topBar">
   <img src="./images/coverPhoto.jpg" alt="">
   <div class="introText">
@@ -22,7 +29,6 @@
     <h3>September 10, 2022</h3>
   </div>
   </div>
-
     <h2>Schedule</h2>
       <table>
         <tbody>
@@ -256,23 +262,23 @@
                                 <hr>
                             <div class="col-md-12 input-group">
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input " type="radio" value="Vegetarian" name="inlineRadioOptionsFood" id="vg" >
+                                        <input class="form-check-input " type="checkbox" value="Vegetarian" name="inlineRadioOptionsFood" id="vg" >
                                         <label class="form-check-label" for="vg">Vegetarian</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input " type="radio" value="Gluten Free" name="inlineRadioOptionsFood" id="gf" >
+                                        <input class="form-check-input " type="checkbox" value="Gluten Free" name="inlineRadioOptionsFood" id="gf" >
                                         <label class="form-check-label" for="gf">Gluten Free</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input " type="radio" value="Dairy Free" name="inlineRadioOptionsFood" id="df" >
+                                        <input class="form-check-input " type="checkbox" value="Dairy Free" name="inlineRadioOptionsFood" id="df" >
                                         <label class="form-check-label" for="df">Dairy Free</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input " type="radio" value="Other" name="inlineRadioOptionsFood" id="other"  >
+                                        <input class="form-check-input " type="checkbox" value="Other" name="inlineRadioOptionsFood" id="other"  >
                                         <label class="form-check-label" for="other">Other</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input " type="radio" value="No Food Restrictions" name="inlineRadioOptionsFood" id="none"   checked>
+                                        <input class="form-check-input " type="checkbox" value="No Food Restrictions" name="inlineRadioOptionsFood" id="none">
                                         <label class="form-check-label" for="none">None</label>
                                     </div>
                                 </div>
